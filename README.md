@@ -8,7 +8,7 @@ Open three terminals: T1, T2, T3
 
 
 | Terminal        | Steps           | Remarks  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------| -----:|
 | T1      | docker pull amazonlinux | pull the image |
 | | docker run --name dcInT1 -ti -p 8080:8080 amazonlinux      |    |
 | T2 | docker run --name dcInT2 -ti amazonlinux      |     |
@@ -18,7 +18,7 @@ Open three terminals: T1, T2, T3
 ## 2. creat image
 
 | Terminal        | Steps           | Remarks  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------| -----:|
 | T1      | nc |  |
 | T2 | yum install iputils to install ping      |    |
 |  | yum install nc    |   |
@@ -32,7 +32,7 @@ Open three terminals: T1, T2, T3
 ## 3. Networking
 
 | Terminal        | Steps           | Remarks  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------| -----:|
 | T1      | nc -vlkp 8080 |  |
 | T2 | nc terminal1_IP 8080      |    |
 |  | nc localIP 8080    |   |
@@ -44,6 +44,6 @@ Open three terminals: T1, T2, T3
 ## 4. Process mapping
 
 | Terminal        | Steps           | Remarks  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------| -----:|
 | T1      | ps |  |
 | T3 | docker top containerIDT1   | |
